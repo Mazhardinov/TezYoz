@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tez yozish o'yini</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+    /* body {
+      color: #db2626;
+    } */
+    .bg-body {
+      background-color: #476072;
+      color: #548CA8;
+    }
+    .bg-header {
+      background-color: #334257;
+    }
+    .bg-eslatma {
+      background-color: #334257;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+  </style>
+</head>
+
+<body class="bg-body text-white ">
+  <header class="bg-header text-center p-3 mb-5">
+    <h1>Tez<span class="text-warning">Va</span>To'gri<span class="text-warning">Yoz</span></h1>
+  </header>
+  <div class="container text-center">
+
+    <!-- Word & Input -->
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <p class="lead">Berilgan so'zni
+          <span class="text-success display-4" id= "seconds">5</span> soniya ichida yozing.</p>
+        <h2 class="display-2 mb-5" id="current-word">Boshlash</h2>
+        <input type="text" class="form-control form-control-lg" placeholder="Yozishni boshlang..." id="word-input" autofocus>
+        <h5 class="mt-3" id="message"></h5>
+
+        <!-- Time & Score Columns -->
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <h3>Vaqtingiz:
+              <span id="time">0</span>
+            </h3>
+          </div>
+          <div class="col-md-6">
+            <h3>Natija:
+              <span id="score">0</span>
+            </h3>
+          </div>
+          <br><br>
+          <div class="col">
+            <h3>Yuqori Natija:
+              <span id="highscore">0</span>
+            </h3>
+          </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="row my-5 ">
+          <div class="col-md-12">
+            <div class="card card-body bg-eslatma text-white">
+              <h5 class="text-warning">Qo'llanma</h5>
+              <p>Ball to'plash uchun har bir so'zni berilgan vaqt mobaynida yozing.
+                Qayta o'ynash uchun shunchaki berilgan so'zni yozing.
+                Sizning natijangiz esa o'chiriladi. Yuqori natijangiz esa yangilanib boradi.
+              <br><span class="text-danger font-weight-bold">Eslatma:</span> O'yinni qayta boshlayotgan vaqtingizda 1-so'z hisobga olinmaydi!!!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer text-center px-3">
+    <p class="font-weight-bold">This game is created by Mazhardinov Samandar | &copy; 2021. All rights reserved</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
